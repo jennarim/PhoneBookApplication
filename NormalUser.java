@@ -34,17 +34,17 @@ public class NormalUser extends User implements NormalUserInterface {
 	public void userAdd(PhoneBookEntry entry) {
 		int check = phonebook.addEntry(entry);
 		if (check == 0)
-			System.out.println("Phonebook is too full.");
+			System.out.println("* Phonebook is too full.");
 		else if (check == 1)
-			System.out.println("Entry was successfully added.");
+			System.out.println("* Entry was successfully added.");
 	}
 	
 	/* Edit an entry given a first and last name */
 	public void editEntry(String fName, String lName) {
 		if (phonebook.Edit(fName, lName) == 1)
-			System.out.println("Entry successfully edited.");
+			System.out.println("* Entry successfully edited.");
 		else	
-			System.out.println("Your entry doesn't exist.");
+			System.out.println("* Your entry doesn't exist.");
 	}
 	
 	/* Sort the entries by id */

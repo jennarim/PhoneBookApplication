@@ -1,1 +1,1 @@
-NYUAdmin, cs101section001, nyuadmin@nyu.edu
+theadmin, phonebook, admin@nyu.edu

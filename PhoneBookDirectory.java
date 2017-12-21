@@ -13,7 +13,7 @@ public class PhoneBookDirectory {
 		count = 0;
 		/* Can initialize each phonebook */
 		for (int i = 0; i < PhoneBookEntries.length; i++) {
-			PhoneBookEntries[i] new PhoneBookEntry();
+			PhoneBookEntries[i] = new PhoneBookEntry();
 		}
 	}
 	
@@ -31,8 +31,10 @@ public class PhoneBookDirectory {
 	
 	/* 2. Print all phonebook entries. */
 	public void printEntries() {
+		/* Print the entry only if it exists */
 		for (int i = 0; i < PhoneBookEntries.length; i++)
-			System.out.println(i + ". " + PhoneBookEntries[i] + " ");
+			if (PhoneBookEntries[i].getId() != -1)
+				System.out.println(i+1 + ". " + PhoneBookEntries[i] + " ");
 	}
 	
 	/* 3. Search for an entry by Phone Number (Linear Search) */
@@ -101,50 +103,48 @@ public class PhoneBookDirectory {
 			return -1; // Returns 0 if entry not found
 		}
 		int indexOfFoundEntry = SearchByName(firstName, lastName);
-		int userChoice;
-		do {
-			System.out.println("What would you like to edit? Input the corresponding integer. Enter 0 to exit.");
-			System.out.println("1. ID\n2. First Name\n3. Last Name\n4. E-mail\n5. Zip Code\n6. Phone Number\n0. Go back");
-			userChoice = input.nextInt();
-			switch (userChoice) {
-				case 0:
-					break;
-				case 1:
-					System.out.println("What would you like to change the ID to?");
-					PhoneBookEntries[indexOfFoundEntry].setId(input.nextInt());
-					break;
-				case 2:
-					System.out.println("What would you like to change the first name to?");
-					PhoneBookEntries[indexOfFoundEntry].setfName(input.next());
-					break;
-				case 3:
-					System.out.println("What would you like to change the last name to?");
-					PhoneBookEntries[indexOfFoundEntry].setlName(input.next());
-					break;
-				case 4:
-					System.out.println("What would you like to change the e-mail to?");
-					PhoneBookEntries[indexOfFoundEntry].setEmail(input.next());
-					break;
-				case 5:
-					System.out.println("What would you like to change the zip code to?");
-					PhoneBookEntries[indexOfFoundEntry].setZipCode(input.next());
-					break;
-				case 6:
-					System.out.println("What would you like to change the phone number to?");
-					PhoneBookEntries[indexOfFoundEntry].setPhoneNum(input.next());
-					break;
-				default:
-					System.out.println("Invalid input.");
-					break;
-			}
-			return 1; // Returns 1 if object is found and successfully edited
-		} while (userChoice != 0);
+		
+		System.out.println("* What would you like to edit? Input the corresponding integer.");
+		System.out.println("1. ID\n2. First Name\n3. Last Name\n4. E-mail\n5. Zip Code\n6. Phone Number");
+		int userChoice = input.nextInt();
+		switch (userChoice) {
+			case 0:
+				break;
+			case 1:
+				System.out.println("* What would you like to change the ID to?");
+				PhoneBookEntries[indexOfFoundEntry].setId(input.nextInt());
+				break;
+			case 2:
+				System.out.println("* What would you like to change the first name to?");
+				PhoneBookEntries[indexOfFoundEntry].setfName(input.next());
+				break;
+			case 3:
+				System.out.println("* What would you like to change the last name to?");
+				PhoneBookEntries[indexOfFoundEntry].setlName(input.next());
+				break;
+			case 4:
+				System.out.println("* What would you like to change the e-mail to?");
+				PhoneBookEntries[indexOfFoundEntry].setEmail(input.next());
+				break;
+			case 5:
+				System.out.println("* What would you like to change the zip code to?");
+				PhoneBookEntries[indexOfFoundEntry].setZipCode(input.next());
+				break;
+			case 6:
+				System.out.println("* What would you like to change the phone number to?");
+				PhoneBookEntries[indexOfFoundEntry].setPhoneNum(input.next());
+				break;
+			default:
+				System.out.println("* Invalid input.");
+				break;
+		}
+		return 1; // Returns 1 if object is found and successfully edited
+		
 	}
 	
 	/* 7. Delete an entry of a given id */
 	public int DeleteEntry(int id) {
 		PhoneBookEntry deletedEntry = SearchbyIdBinarySearch(id);
-		System.out.println(deletedEntry.getId());
 		/* If id can't be found, meaning deletedEntry is a default object which has an ID of -1, 
 		 * then return 1.
 		 * Assumption:

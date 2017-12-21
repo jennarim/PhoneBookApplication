@@ -97,12 +97,13 @@ public class PhoneBookEntry implements Comparable <PhoneBookEntry>{
 	
 	/* Prints all the data fields */
 	public void printBookEntry() {
-		System.out.println("ID: " + id + "\nFirst Name: " + fName +
-				           "\nLast Name: " + lName + "\nE-mail: " + email + 
-				           "\nZip code: " + zipCode + "\nPhone #: " + phoneNumber);
+		System.out.println("   ID: " + id + "\n   First Name: " + fName +
+				           "\n   Last Name: " + lName + "\n   E-mail: " + email + 
+				           "\n   Zip code: " + zipCode + "\n   Phone #: " + phoneNumber);
 	}
 	
 	public String toString() {
-		return id + ": " + fName + " " + lName + " " + email + " " + zipCode + " " + phoneNumber; 
+		return "\n   Name: " + fName + " " + lName + "\n   ID: " + id + "\n   Email: " + email + "\n   Zipcode: " + zipCode +
+				"\n   Phone number: " + phoneNumber;
 	}
 }

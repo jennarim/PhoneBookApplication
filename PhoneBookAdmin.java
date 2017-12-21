@@ -35,27 +35,27 @@ public class PhoneBookAdmin extends User implements AdminInterface {
 	public void userAdd(PhoneBookEntry entry) {
 		int check = phonebook.addEntry(entry);
 		if (check == 0)
-			System.out.println("Phonebook is too full.");
+			System.out.println("* Phonebook is too full.");
 		else if (check == 1)
-			System.out.println("Entry was successfully added.");
+			System.out.println("* Entry was successfully added.");
 	}
 	
 	/* Edit an entry given a first and last name */
 	public void editEntry(String fName, String lName) {
 		if (phonebook.Edit(fName, lName) == 1)
-			System.out.println("Entry successfully edited.");
+			System.out.println("* Entry successfully edited.");
 		else	
-			System.out.println("Your entry doesn't exist.");
+			System.out.println("* Your entry doesn't exist.");
 	}
 	
 	/* Delete an entry (replace the attributes) */
 	public int deleteEntry(int id) {
 		if (phonebook.DeleteEntry(id) == 0) {
-			System.out.println("Your entry doesn't exist.");
+			System.out.println("* Your entry doesn't exist.");
 			return 0;
 		}
 		else {
-			System.out.println("Entry successfully deleted.");
+			System.out.println("* Entry successfully deleted.");
 			return 1;
 		}
 	}
@@ -73,7 +73,7 @@ public class PhoneBookAdmin extends User implements AdminInterface {
 	/* Searches phonebook by id */
 	public void searchByBinarySearch(int id) {
 		if (phonebook.SearchbyIdBinarySearch(id).getId() != -1) {
-			System.out.println("Entry found: ");
+			System.out.println("* Entry found: ");
 			phonebook.SearchbyIdBinarySearch(id).printBookEntry();
 		}
 	}
