@@ -7,8 +7,8 @@ An application built using object oriented programming that allows a user to add
 ![alt text](https://user-images.githubusercontent.com/20725513/34241084-fbca18e4-e5e0-11e7-9cdb-f3850103a129.png)
 
 ## 2. Edit an entry (before and after)
-![alt text](https://user-images.githubusercontent.com/20725513/34240620-99251764-e5dd-11e7-8de3-4d0dce2a4299.png)
-![alt text](https://user-images.githubusercontent.com/20725513/34240632-ae8dd528-e5dd-11e7-9b59-5a9b8856f0c6.png)
+![alt text](https://user-images.githubusercontent.com/20725513/34241125-3fb6e94c-e5e1-11e7-99dc-a6cc38182f14.png)
+![alt text](https://user-images.githubusercontent.com/20725513/34241143-5d9ccc6a-e5e1-11e7-9fa4-23f0ecb1f341.png)
 
 ## 3. Delete an entry 
 ![alt text](https://user-images.githubusercontent.com/20725513/34241006-447eead4-e5e0-11e7-8e88-4b800519be2a.png)
