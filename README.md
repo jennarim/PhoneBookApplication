@@ -3,7 +3,7 @@ An application built using object oriented programming that allows a user to add
 
 # Admin: Menu
 ## 1. Add an entry to the phonebook (before and after)
-![alt text](https://user-images.githubusercontent.com/20725513/34240515-b3c28490-e5dc-11e7-974c-83eae452cff3.png)
+![alt text](https://user-images.githubusercontent.com/20725513/34241061-ce0bad46-e5e0-11e7-8969-1a578f38d24a.png)
 ![alt text](https://user-images.githubusercontent.com/20725513/34240599-6e0665ce-e5dd-11e7-8ad1-0cba0fdcfeb5.png)
 
 ## 2. Edit an entry (before and after)
