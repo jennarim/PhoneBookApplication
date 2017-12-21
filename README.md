@@ -1,7 +1,12 @@
 # PhoneBookApplication
-An application built using object oriented programming that allows a user to add, edit, search using linear and binary search, and delete phone book entries. Covers several aspects of OOP, such as inheritance, polymorphism, encapsulation, abstraction, information hiding, and interfaces.
+An application built using OOP that allows a user to interact with his/her phonebook. Functionalities include: add, edit, delete, sort, search using linear or binary search, and change user info.
 
-# Admin: Menu
+Covers several aspects of OOP, such as inheritance, polymorphism, encapsulation, abstraction, information hiding, and interfaces.
+
+If you want to run this on terminal, the username and password for Admin are "theadmin" and "phonebook".
+The username and password for a normal user are "theuser" and "phonebook".
+
+# Admin
 ## 1. Add an entry to the phonebook (before and after)
 ![alt text](https://user-images.githubusercontent.com/20725513/34241061-ce0bad46-e5e0-11e7-8969-1a578f38d24a.png)
 ![alt text](https://user-images.githubusercontent.com/20725513/34241084-fbca18e4-e5e0-11e7-9cdb-f3850103a129.png)
@@ -23,11 +28,14 @@ An application built using object oriented programming that allows a user to add
 ## 6. Search for an entry of a given ID
 ![alt text](https://user-images.githubusercontent.com/20725513/34241319-b2f78a28-e5e2-11e7-8260-d47449ee5b35.png)
 
+## 7. Print an entry
+
 ## 8 & 9. Change Password and Username
 ![alt text](https://user-images.githubusercontent.com/20725513/34241337-cb022bf0-e5e2-11e7-879e-0ab6fad9aa43.png)
 ![alt text](https://user-images.githubusercontent.com/20725513/34241338-cb0ca0e4-e5e2-11e7-8b24-d8c78a9db2ef.png)
 
-
+# Normal User
+Normal User has the similar functionalities to Admin's, except a Normal User can only add, edit, sort, and search.
 
 
 
