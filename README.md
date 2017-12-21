@@ -1,7 +1,7 @@
 # PhoneBookApplication
 An application built using OOP that allows a user to interact with his/her phonebook. Functionalities include: add, edit, delete, sort, search using linear or binary search, and change user info.
 
-Covers several aspects of OOP, such as inheritance, polymorphism, encapsulation, abstraction, information hiding, and interfaces.
+Covers several aspects of OOP, such as inheritance, polymorphism, encapsulation, abstraction, and interfaces.
 
 If you want to run this on terminal, the username and password for Admin are "theadmin" and "phonebook".
 The username and password for a normal user are "theuser" and "phonebook".
