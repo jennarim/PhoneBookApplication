@@ -35,7 +35,7 @@ The username and password for a normal user are "theuser" and "phonebook".
 ![alt text](https://user-images.githubusercontent.com/20725513/34241338-cb0ca0e4-e5e2-11e7-8b24-d8c78a9db2ef.png)
 
 # Normal User
-Normal User has the similar functionalities to Admin's, except a Normal User can only add, edit, sort, and search.
+Normal User has similar functionalities to Admin's, except a Normal User can only add, edit, sort, and search.
 
 
 
