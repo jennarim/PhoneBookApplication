@@ -23,7 +23,6 @@ public class User {
 	
 	/* Print user's info */
 	public void PrintUserInfo() {
-
 		System.out.println("* Username: " + username);
 		System.out.println("* Password: " + password);
 		System.out.println("* Phonebook: ");
